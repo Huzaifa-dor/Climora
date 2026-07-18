@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="favicon" href="Icon.png">
+    <title>Climora | Learn The weather around the world with One Click!</title>
+</head>
+<body>
+    <center>
+    <div>
+            <img src="Icon.png" alt="IMG_ERR" id="logoTop">
+        </div>
+    </center>
+    <section class="top">
+        
+        <div>
+            <h1>--Climora | World weather at your clicks!--</h1>
+        </div>
+    </section>
+    <section class="searchArea">
+        <section class="search">
+        <div>
+            <input type="text" placeholder="Search Cities Around The World" id="searchBox">
+        </div>
+        <div>
+            <button id="searchButton" type="button">Select</button>
+        </div>
+        </section>
+        <div id="suggestions">
+
+        </div>
+    </section>
+    
+    <h1 id="cityLabel">Please Select a City First</h1>
+    <section class="Info">
+        <div>
+            <h1>Temperature</h1>
+            <p id="tempP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Feels Like</h1>
+            <p id="feelP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Sky:</h1>
+            <p id="skyP">----[Select A City First]</p>
+            <img id="weatherIcon">
+        </div>
+        <div>
+            <h1>Humidity:</h1>
+            <p id="humP">----[Select A City First]</p>
+        </div>
+    </section>
+    <section class="Info">
+        <div>
+            <h1>Wind Speed</h1>
+            <p id="windP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Pressure</h1>
+            <p id="preP">----[Select A City First]</p>
+        </div>
+    </section>
+    <h1>Time and Day and Weather History</h1>
+    <section class="Info">
+        <div>
+            <h1>Day</h1>
+            <p id="dayP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Time</h1>
+            <p id="timeP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Sunrise🌅</h1>
+            <p id="sunriseP">----[Select A City First]</p>
+        </div>
+        <div>
+            <h1>Sunset🌇</h1>
+            <p id="sunsetP">----[Select A City First]</p>
+        </div>
+    </section>
+    <section class="Info">
+        <div class="forecastCard">
+            <h1>Today</h1>
+            <img>
+            <p>----</p>
+        </div>
+        <div class="forecastCard">
+            <h1>Tommorow</h1>
+            <img>
+            <p>----</p>
+        </div>
+        <div  class="forecastCard">
+            <h1>In 2 Days</h1>
+            <img>
+            <p>----</p>
+        </div>
+        <div class="forecastCard">
+            <h1>In 3 days</h1>
+            <img>
+            <p>----</p>
+        </div>
+        <div class="forecastCard">
+            <h1>In 4 Days</h1>
+            <img>
+            <p>----</p>
+        </div>
+    </section>
+    <h1>24-hours from now...</h1>
+    <section class="graph">
+        <canvas id="forecastChart">
+        </canvas>
+    </section>
+    <section class="about">
+        <div>
+            <h1>About Climora</h1>
+            <p>Climora is a JavaScript Based webpage made By Muhammad Huzaifa Sultan, a student in His Intermediate studies. He's making projects to learn more about JavaScript and Wepage Designing. Climora is a Project solely built by him and uploaded on GitHub...</p>
+            <p>This website is made by Muhammad Huzaifa, who's a Software Enthusiast and loves to look forward to hard projects In Order to increase his Skills in the respective area. </p>
+            <p>This Website is thus, a result of him looking forward to JavaScript and Exploring its benefits...</p>
+            <p>This Website is powered by <a href="https://openweathermap.org" id="linkAbout">OpenWeatherMap</a> and all the data is provided by their API that supports Real time request.</p>
+        </div>
+    </section>
+    <section id="end">
+    <footer>
+        <p>Made By Muhammad Huzaifa Sultan, 2026 &copy;</p>
+    </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
